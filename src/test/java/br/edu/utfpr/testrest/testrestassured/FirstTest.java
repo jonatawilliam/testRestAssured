@@ -20,11 +20,11 @@ public class FirstTest {
         RestAssured.proxy = ProxySpecification
                 .host("10.20.10.50")
                 .withPort(3128)
-                .withAuth("username", "password");    
-        
+                .withAuth("username", "password");
+
         RestAssured.registerParser("text/plain", Parser.JSON);
     }
-    
+
     @Test
     public void testHealthCheck() {
         when().

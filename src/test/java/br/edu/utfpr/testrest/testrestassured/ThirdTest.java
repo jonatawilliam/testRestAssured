@@ -39,7 +39,7 @@ public class ThirdTest {
                 delete("http://localhost:3000/livros/{id}", 6789).
         then()
                 .statusCode(200);
-    }   
+    }
    
     @Test
     public void testAdicionarLivro() {
